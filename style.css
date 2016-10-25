@@ -1,0 +1,183 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 1.3em;
+  font-weight: normal;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 850px;
+  margin-left: 20px;
+  margin-top: 10px;
+  float: left;
+}
+
+.row {
+  /*Property that must be on the parent of floated children elements*/
+  overflow: hidden;
+  padding-right: 30px;
+}
+
+.col-2, .col-8, .col-4 {
+  float: left;
+  box-sizing: border-box;
+}
+
+.col-2 {
+  display: block;
+  font-size: 1.1em;
+  width: 16.6666666%;
+  border: 1px solid #FFFFFF;
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.col-8 {
+  width: 66.666666%;
+}
+
+.col-4 {
+  width: 33.333333%;
+}
+
+.nav li {
+  list-style: none;
+  display: inline;
+}
+
+.nav {
+  padding: 0px;
+}
+.red_text {
+  color: #FF4F3E
+}
+
+.gray_text {
+  color: #B6BFB0
+}
+.small_font {
+  font-size: 0.5em;
+  margin-left: 5px;
+}
+
+.margin_under {
+  margin-bottom: 1px;
+}
+
+.margin_upper {
+  margin-top: 40px;
+}
+
+.small_margin_upper {
+  margin-top: 5px;
+}
+
+article {
+	border-bottom: 1px solid #DDD;
+	margin: 3em 0;
+	padding-bottom: 1.5em;
+  margin-top: 2px;
+  margin-left: 3px;
+}
+
+article p:first-of-type:first-letter {
+	float: left;
+	font-size: 5em;
+	line-height: 1;
+	color: #B6BFB0;
+	margin: -.08em .08em 0 -.08em;
+}
+
+.right {
+  text-align: right;
+}
+
+.non_bold {
+  font-weight: normal;
+}
+
+.border {
+  	border-bottom: 1px solid #DDD;
+    padding-bottom: 20px;
+    margin-left: 10px;
+}
+
+.ad {
+  width: 300px;
+  height: 225px;
+  background-color: #DDD;
+  margin: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  color: #B6BFB0;
+  font-weight: bold;
+}
+
+.left_margin {
+  margin-left: 15px;
+}
+
+a {
+  color: #FF4F3E;
+  text-decoration: none;
+}
+
+@media(max-width:845px) {
+   .col-8, .col-4 {
+     width: 100%;
+     padding-right: 30px;
+     box-sizing: border-box;
+  }
+  .ad {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+@media(max-width:700px) {
+   .col-2 {
+     width: 100%;
+     padding-right: 30px;
+     box-sizing: border-box;
+   }
+    span {
+    width: 100%;
+    }
+
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 42%;
+      transform: translate(-3%, -50%);
+      font-size: 3em;
+      color: #B6BFB0;
+      font-weight: bold;
+    }
+}
+
+@media(max-width:560px) {
+  img {
+    display: none;
+  }
+}
